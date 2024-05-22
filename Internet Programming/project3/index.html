@@ -1,0 +1,32 @@
+<head>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/mySite.css">
+<title>Project 3 Text Analyzer</title>
+</head>
+<body class="text-analyzer">
+
+    <h1 class="text-analyzer">Text Analyzer</h1>
+
+    <form class="text-analyzer" onsubmit="analyzeText(); return false;">
+        <label class="text-analyzer" for="textInput">Enter your text:</label>
+        <textarea id="textInput" class="text-analyzer" required></textarea>
+        <button type="submit" id="analyzeButton" class="text-analyzer">Analyze</button>
+		
+        <div id="analysisResults" class="text-analyzer">
+			<p>Words Count: <span id="wordsCount">0</span></p>
+			<p>Unique Word Count: <span id="uniqueWordsCount">0</span></p>
+			<p>Long Words Count: <span id="longWordsCount">0</span></p>
+			<p>Sentences Count: <span id="sentencesCount">0</span></p>
+			<p>Number Count: <span id="numberCount">0</span></p>
+			<p>Most Frequent Word: <span id="mostFrequentWord">N/A</span></p>
+		</div>
+    </form>
+    
+
+    
+</body>
+
+<footer style="border-top: 4px double black">
+	<a href="../index.html">ePortfolio</a>
+</footer>
+</html>

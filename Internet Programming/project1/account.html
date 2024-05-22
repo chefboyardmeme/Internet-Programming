@@ -1,0 +1,88 @@
+<head>
+	<title>Create An Account</title>
+	<link rel="stylesheet" type="text/css" href="../css/mySite.css">
+</head>
+<form action="https://unfinishedbusiness.app/alert.php" method="post">
+
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="fname"><br>
+	<label for="lname">Last Name:</label>
+	<input type="text" id="lname" name="lname"><br>
+	<label for="eaddress">Email Address:</label>
+	<input type="text" id="eaddress" name="eaddress"><br><br>
+	
+	<label for="pwd">Password:</label>
+	<input type="password" id="pwd" name="pwd"><br>
+	<label for="cnfmpwd">Confirm Password:</label>
+	<input type="password" id="cnfmpwd" name="cnfmpwd"><br><br>
+	
+	<label for="bdate"Birth Date:</label>
+	<input type="date" id="bdate" name="bdate" value="2015-10-21" min="1970-01-01" max="2025-12-31"><br><br>
+	<strong>Major</strong><br>
+	<input type="radio" id="compsci" name="major" value="Computer Science">
+	<label for="compsci">Computer Science</label><br>
+	<input type="radio" id="infosci" name="major" value="Information Science">
+	<label for="infosci">Information Science</label><br>
+	<input type="radio" id="infosys" name="major" value="Information Systems">
+	<label for="infosys">Information Systems</label><br>
+	<input type="radio" id="infotech" name="major" value="Information Technology">
+	<label for="infotech">Information Technology</label><br><br>
+	
+	<strong>Programming Language Expertise</strong><br>
+	<table >
+		<tr class="even">
+			<td>
+			<input type="checkbox" id="lang1" name="lang1" value="C">
+			<label for="lang1"><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a></label>
+			</td>
+			<td>
+			<input type="checkbox" id="lang2" name="lang2" value="C#">
+			<label for="lang2"><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">C#</a></label>
+			</td>
+		</tr>
+		<tr class="even">
+			<td>
+			<input type="checkbox" id="lang3" name="lang3" value="Java">
+			<label for="lang3"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a></label>
+			</td>
+			<td>
+			<input type="checkbox" id="lang4" name="lang4" value="JavaScript">
+			<label for="lang4"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></label>
+			</td>
+		</tr>
+		<tr class="even">
+			<td>
+			<input type="checkbox" id="lang5" name="lang5" value="PHP">
+			<label for="lang5"><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP</a></label>
+			</td>
+			<td>
+			<input type="checkbox" id="lang6" name="lang6" value="Python">
+			<label for="lang6"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a></label>
+			</td>
+		</tr>
+		<tr class="even">
+			<td>
+			<input type="checkbox" id="lang7" name="lang7" value="Visual Basic">
+			<label for="lang7"><a href="https://en.wikipedia.org/wiki/Visual_Basic_(classic)"target="_blank">Visual Basic</a></label>
+			</td>
+			<td>
+			<input type="checkbox" id="lang8" name="lang8" value="Other">
+			<label for="lang8">Other</label>
+			</td>
+		</tr>
+	</table>
+	
+	<input type="reset" value="Reset">
+	<input type="submit" value="Submit">
+	
+	<input type="hidden" name="username" value="901902718" />
+	<input type="hidden" name="to_email_address" value="n01183521@unf.edu" />
+	<input type="hidden" name="to_display_name" value="Michael Morrison" />
+</form>
+<footer>
+	<ul style="border-top: 4px double black">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="schedule.html">Class Schedule</a></li>
+		<li><a href="../index.html">ePortfolio</a></li>
+	</ul>
+</footer>

@@ -1,0 +1,81 @@
+function testLength(value, length)
+{
+	let strValue = String(value);
+	return strValue.length === length;
+}
+
+function testNumber(value)
+{
+	return !isNaN(value);
+}
+
+validateControl(control, name)
+{
+	const controlValue = control.value;
+	if (name === "CVC") 
+	{
+		if (testNumber(controlValue)) 
+		{
+			return true;
+		} 
+		else 
+		{
+			console.error(`Error: ${name} must be a number.`);
+			return false;
+		}
+	} 
+	else 
+	{
+		if (typeof controlValue === "string") 
+		{
+			return true;
+		} 
+		else 
+		{
+			console.error(`Error: ${name} must be a string.`);
+			return false;
+		}
+	}
+}
+
+validateCreditCard(value)
+{
+	
+}
+
+validateDate(value)
+{
+	
+}
+
+validateEmail(value)
+{
+	
+}
+
+validateCarType(control)
+{
+	
+}
+
+validateState(value)
+{
+	
+}
+
+validateDateTime(value)
+{
+	
+}
+
+validateDropOffTime(pickUpTime, dropOffTime)
+{
+	
+}
+
+function validateForm()
+{
+	tester();
+}
+function tester()
+{alert("I am an alert box!");}

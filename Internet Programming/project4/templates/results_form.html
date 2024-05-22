@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myMovies Xpress! - Search Results</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mySite.css" />
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<h3>Welcome, <?= $_SESSION["displayName"] ?> (<a href="javascript: confirmLogout()">logout</a>)</h3>
+		<h1>myMovies Xpress!</h1>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE ABOVE THIS LINE -->
+		
+<?php
+    // Check if $resultsArray and $searchString are set
+    if (isset($resultsArray) && isset($searchString)) {
+        // Display the number of movies found for the keyword
+        echo "<p>{$resultsCount} movies found for the keyword: {$searchString}</p>";
+
+        // If at least one movie exists in the shopping cart
+        if (!empty($movies)) {
+            // Create HTML table headers
+            echo "<table>";
+            echo "<tr><th>Poster</th><th>Title (Year)</th><th>Add Movie</th></tr>";
+
+            // Iterate through each movie in the search results
+            foreach ($resultsArray as $result) {
+                // Create HTML table row for each movie
+                echo "<tr>";
+                // Movie poster
+                echo "<td><img src='{$result['Poster']}' alt='Movie Poster' height='100'></td>";
+                // Movie title and year
+                echo "<td>{$result['Title']} ({$result['Year']})</td>";
+                // Add Movie link
+                echo "<td><a href='javascript: addMovie(\"{$result['imdbID']}\")'>+</a></td>";
+                echo "</tr>";
+            }
+
+            // Close the HTML table
+            echo "</table>";
+        } else {
+            // If 0 movies exist in the shopping cart
+            echo "<p>0 movies found</p>";
+        }
+
+        // Add Cancel button
+        echo "<input type='button' value='Cancel' onclick='javascript: confirmCancel()' />";
+    } else {
+        // If $resultsArray or $searchString is not set
+        echo "<p>No search results available</p>";
+    }
+    ?>
+<!-- DO NOT REMOVE OR MODIFY THE CODE OR PLACE YOUR CODE BELOW THIS LINE -->
+	</body>
+	<footer style="border-top: 4px double black">
+		<a href="../../index.html">ePortfolio</a>
+	</footer>
+</html>

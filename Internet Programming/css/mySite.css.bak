@@ -1,0 +1,168 @@
+@import url("http://139.62.210.181/default.css");
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+/* Project 1 index*/
+.personal 
+{
+	background-color: lightblue;
+}
+.hobbies
+{
+	background-color: lightgray;
+}
+.education
+{
+	background-color:plum;
+}
+.college
+{
+	font-weight: bold;
+}
+.diploma
+{
+	font-style:italic;
+	
+}
+a:hover.expand{
+  font-size:150%;
+}
+
+/* Project 1 Schedule*/
+td
+{
+	text-align: center;
+}
+th.change
+{
+	background-color: lavender;
+}
+tr:nth-child(even).even
+{
+	background-color:lightgray;
+}
+ol.upper
+{
+	list-style-type: upper-alpha;
+}
+
+/* Project 1 Account*/
+input[type="radio"]
+{
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-clip: content-box;
+	border: 2px solid grey;
+	background-color: grey;
+}
+input[type="radio"]:checked
+{
+	background-color:green;
+}
+input[type="checkbox"]
+{
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border: 2px solid grey;
+	background-color:grey;
+}
+input[type="checkbox"]:checked
+{
+	background-color:blue;
+}
+
+/* Project 2 */
+.anything
+{
+	color:green;
+}
+
+.carType
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sectionBuffer
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Project 3 */
+/* Apply styles to the body element specific to Text Analyzer */
+body.text-analyzer {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the h1 header specific to Text Analyzer */
+h1.text-analyzer {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style the form container specific to Text Analyzer */
+form.text-analyzer {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the label for the textarea specific to Text Analyzer */
+label.text-analyzer {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the textarea input specific to Text Analyzer */
+textarea.text-analyzer {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the "Analyze" button specific to Text Analyzer */
+button#analyzeButton.text-analyzer {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style the analysis results section specific to Text Analyzer */
+div#analysisResults.text-analyzer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style the result values specific to Text Analyzer */
+div#analysisResults.text-analyzer p {
+    margin: 5px 0;
+    font-weight: bold;
+}
